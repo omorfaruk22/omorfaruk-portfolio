@@ -1,0 +1,239 @@
+/* মডার্ন ই-কমার্স ডিজাইন */
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+ 
+
+body { 
+    background-color: #c5d7f2; 
+    color: #333; 
+    line-height: 1.6; 
+}
+
+/* ব্যানার */
+.hero { 
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1350&q=80'); 
+    height: 350px; 
+    background-size: cover; 
+    background-position: center; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    color: white; 
+    text-align: center; 
+    padding: 20px; 
+}
+
+.hero h1 { 
+    font-size: 45px; 
+    margin-bottom: 10px; 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
+}
+
+.hero p { 
+    font-size: 20px; 
+    opacity: 0.9; 
+}
+
+/* কন্টেইনার */
+.container { 
+    max-width: 1200px; 
+    margin: 50px auto; 
+    padding: 0 20px; 
+}
+
+.section-title { 
+    text-align: center; 
+    margin-bottom: 40px; 
+    font-size: 32px; 
+    position: relative; 
+    padding-bottom: 10px; 
+}
+/* মডার্ন ন্যাববার ডিজাইন */
+.modern-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2d3436; /* ডার্ক মডার্ন কালার */
+    padding: 15px 5%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo a {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #00b894; /* সবুজ হাইলাইট */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links li a {
+    color: #dfe6e9;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.nav-links li a:hover {
+    color: #00b894;
+}
+
+/* মোবাইল ভিউর জন্য যাদু (Responsiveness) */
+@media (max-width: 768px) {
+    .modern-nav {
+        flex-direction: column; /* মোবাইলে লোগো উপরে, মেনু নিচে */
+        gap: 15px;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: flex-start;
+        overflow-x: auto; /* মোবাইলে টেনে দেখার সুবিধা */
+        padding-bottom: 5px;
+        scrollbar-width: none; /* স্ক্রলবার লুকানোর জন্য */
+    }
+
+    .nav-links::-webkit-scrollbar {
+        display: none; /* ক্রোম ব্রাউজারে স্ক্রলবার লুকাবে */
+    }
+
+    .nav-links li {
+        white-space: nowrap; /* লেখাগুলোকে এক লাইনে রাখবে */
+    }
+}
+.section-title::after { 
+    content: ''; 
+    width: 60px; 
+    height: 3px; 
+    background: #3498db; 
+    position: absolute; 
+    bottom: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+/* প্রোডাক্ট গ্রিড */
+.product-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 30px; 
+}
+
+/* প্রোডাক্ট কার্ড */
+.product-card { 
+    background: white; 
+    border-radius: 12px; 
+    overflow: hidden; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05); 
+    transition: 0.4s; 
+    text-align: center; 
+    border: 1px solid #eee; 
+}
+
+.product-card:hover { 
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+}
+
+.product-card img { 
+    width: 100%; 
+    height: 220px; 
+    object-fit: cover; 
+    border-bottom: 1px solid #f0f0f0; 
+}
+
+.product-card .info { 
+    padding: 20px; 
+}
+
+.product-card h3 { 
+    margin-bottom: 10px; 
+    font-size: 19px; 
+    color: #e4cf2f; 
+}
+
+.product-card .price { 
+    color: #0d4875; 
+    font-size: 20px; 
+    font-weight: bold; 
+    margin-bottom: 20px; 
+    display: block; 
+}
+
+/* বাটন */
+.btn-add { 
+    background: #2c8ed0; 
+    color: white; 
+    border: none; 
+    padding: 12px 25px; 
+    border-radius: 25px; 
+    cursor: pointer; 
+    font-size: 15px; 
+    font-weight: 600; 
+    width: 100%; 
+    transition: 0.5s; 
+}
+
+.btn-add:hover { 
+    background: #2980b9; 
+    letter-spacing: 2px; 
+}
+
+/* ফুটার */
+footer { 
+    background: #3eac83; 
+    color: white; 
+    text-align: center; 
+    padding: 20px 20px; 
+    margin-top: 60px; 
+    border-radius: 15px;
+}
+
+/* মোবাইল রেসপন্সিভ */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 30px; }
+    nav ul { display: none; }
+}
+
+
+/* এটি তোমার সব পেজের সিএসএস ফাইলে আপডেট করতে হবে */
+nav ul {
+    display: flex; /* আইটেমগুলোকে এক লাইনে রাখবে */
+    flex-wrap: nowrap; /* আইটেমগুলোকে নিচে নামতে দেবে না, এক লাইনেই জোর করে রাখবে */
+    overflow-x: auto; /* যদি স্ক্রিনের বাইরে চলে যায়, তবে আঙুল দিয়ে টেনে (Scroll) দেখা যাবে */
+    justify-content: flex-start; /* আইটেমগুলো বাম দিক থেকে শুরু হবে */
+    padding: 10px;
+    list-style: none;
+    -webkit-overflow-scrolling: touch; /* আইফোনে স্ক্রলিং স্মুথ করার জন্য */
+}
+
+nav ul li {
+    flex: 0 0 auto; /* আইটেমগুলোর সাইজ ছোট-বড় হবে না */
+    margin-right: 15px; /* আইটেমগুলোর মাঝে একটু গ্যাপ */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* তোমার পছন্দমতো কালার দাও */
+    font-size: 14px; /* মোবাইলে এক লাইনে দেখানোর জন্য ফন্ট একটু ছোট রাখা ভালো */
+    white-space: nowrap; /* টেক্সটগুলোকে এক লাইনে রাখবে */
+}

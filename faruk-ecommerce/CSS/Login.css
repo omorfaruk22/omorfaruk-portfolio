@@ -1,0 +1,108 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            /* একটি সুন্দর গ্রেডিয়েন্ট ব্যাকগ্রাউন্ড */
+            background: linear-gradient(135deg, #1abc9c, #3498db);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-card {
+            background: rgba(255, 255, 255, 0.2); /* হালকা কাঁচের মতো এফেক্ট */
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            width: 380px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+        }
+
+        .login-card h2 {
+            margin-bottom: 30px;
+            font-size: 2rem;
+            letter-spacing: 1px;
+            color: #3498db;
+            border: #2c3e50;
+            border-radius: 10%;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .input-group i {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px 12px 12px 45px;
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            outline: none;
+            border-radius: 30px;
+            color: white;
+            font-size: 1rem;
+            border: 1px solid transparent;
+            transition: 0.3s;
+        }
+
+        .input-group input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .input-group input:focus {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: white;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            background: white;
+            border: none;
+            border-radius: 30px;
+            color: #2c3e50;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.4s;
+            margin-top: 10px;
+        }
+
+        .login-btn:hover {
+            background: #1abc9c;
+            color: white;
+            transform: scale(1.02);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .back-home {
+            display: block;
+            margin-top: 25px;
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        .back-home:hover {
+            color: white;
+            text-decoration: none;
+            background: red;
+            border-radius: 20px;
+        }

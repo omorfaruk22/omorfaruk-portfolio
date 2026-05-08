@@ -1,0 +1,133 @@
+ body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: #f4f4f4;
+    }
+
+   
+/* মডার্ন ন্যাববার ডিজাইন */
+.modern-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2d3436; /* ডার্ক মডার্ন কালার */
+    padding: 15px 5%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo a {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #00b894; /* সবুজ হাইলাইট */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links li a {
+    color: #dfe6e9;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.nav-links li a:hover {
+    color: #00b894;
+}
+
+/* মোবাইল ভিউর জন্য যাদু (Responsiveness) */
+@media (max-width: 768px) {
+    .modern-nav {
+        flex-direction: column; /* মোবাইলে লোগো উপরে, মেনু নিচে */
+        gap: 15px;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: flex-start;
+        overflow-x: auto; /* মোবাইলে টেনে দেখার সুবিধা */
+        padding-bottom: 5px;
+        scrollbar-width: none; /* স্ক্রলবার লুকানোর জন্য */
+    }
+
+    .nav-links::-webkit-scrollbar {
+        display: none; /* ক্রোম ব্রাউজারে স্ক্রলবার লুকাবে */
+    }
+
+    .nav-links li {
+        white-space: nowrap; /* লেখাগুলোকে এক লাইনে রাখবে */
+    }
+}
+    /* ব্যানার সেকশন */
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1550009158-9ebf69173e03?auto=format&fit=crop&q=80&w=1000');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+    }
+
+    /* ফিচার সেকশন (আমাদের সম্পর্কে) */
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 50px 5%;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card h3 {
+      color: #2fd6c0;
+    }
+
+    /* ফুটার */
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
