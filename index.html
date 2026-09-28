@@ -1,202 +1,30 @@
-!DOCTYPE html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="bn">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Omar Faruk Web Project</title>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ওমর ফারুকের ব্যক্তিগত পোর্টফোলিও — ওয়েব ডিজাইন, ডেভেলপমেন্ট ও গ্রাফিক্স।">
+  <meta name="theme-color" content="#12372a">
+  <title>Omor Faruk — Developer & Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <style>
-  </style>
+  <link rel="stylesheet" href="brand-green.css">
 </head>
-
 <body>
-
-  <header>
-    <nav>
-      <a href="Login.html">Login</a>
-      <a href="#Home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <section id="home" class="hero">
-    <video autoplay muted loop playsinline class="bg-video">
-      <source src="Video/5278-182817488_medium.mp4" type="video/mp4">
-    </video>
-
-    <div class="hero-content">
-      <h1>Welcome to My Project</h1>
-      <p>I am Omor Faruk | 5th Semester CST Student</p>
-      <a href="#about" class="btn">Learn More</a>
-    </div>
-  </section>
-  <div class="about-grid">
-    <div class="about-item">
-      <h3>শিক্ষা ও পটভূমি</h3>
-      <p><strong>আমি কক্সবাজার পলিটেকনিকের একজন নিবেদিতপ্রাণ ছাত্র। কম্পিউটার সায়েন্সের বেসিক থেকে শুরু করে অ্যাডভান্সড
-          লেভেলের
-          বিষয়গুলো আমি বেশ আগ্রহের সাথে শিখছি।<strong></p>
-    </div>
-
-    <section id="skills" class="section">
-      <h2>My Technical Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <div class="card-icon">🌐</div>
-          <h3>HTML5 & CSS3</h3>
-          <p class="level">Advanced</p>
-          <p class="duration">Experience: 4 Months</p>
-        </div>
-
-        <div class="skill-card">
-          <div class="card-icon">🎨</div>
-          <h3>Web Design</h3>
-          <p class="level">Professional</p>
-          <p class="duration">Experience: 4 Months</p>
-        </div>
-
-        <div class="skill-card">
-          <div class="card-icon">🐍</div>
-          <h3>Python</h3>
-          <p class="level">Intermediate</p>
-          <p class="duration">Experience: 1 Year</p>
-        </div>
-
-        <div class="skill-card">
-          <div class="card-icon">🖌️</div>
-          <h3>Graphics Design</h3>
-          <p class="level">Intermediate</p>
-          <p class="duration">Experience: 1.5 Years</p>
-        </div>
-
-        <div class="skill-card">
-          <div class="card-icon">☕</div>
-          <h3>Java Programming</h3>
-          <p class="level">Intermediate</p>
-          <p class="duration">Experience: 4 Months</p>
-        </div>
-
-        <div class="skill-card">
-          <div class="card-icon">📊</div>
-          <h3>Data Structure</h3>
-          <p class="level">Intermediate</p>
-          <p class="duration">Current Semester</p>
-        </div>
-      </div>
+  <header class="site-header"><a class="brand" href="#home">OF<span>.</span></a><nav aria-label="মূল নেভিগেশন"><a href="#about">আমার কথা</a><a href="#skills">দক্ষতা</a><a href="#contact">যোগাযোগ</a></nav><a class="nav-cta" href="Login.html">লগইন ↗</a></header>
+  <main>
+    <section id="home" class="hero">
+      <video autoplay muted loop playsinline class="bg-video" poster="photo/faruk.jpg"><source src="video/5278-182817488_medium.mp4" type="video/mp4"></video><div class="hero-shade"></div><div class="hero-noise"></div>
+      <div class="hero-content"><p class="eyebrow"><span></span>Cox's Bazar, Bangladesh</p><h1>ভাবনা থেকে<br><em>ডিজিটাল অভিজ্ঞতা।</em></h1><p class="hero-copy">আমি ওমর ফারুক—কম্পিউটার সায়েন্সের ছাত্র, ওয়েব ডেভেলপার এবং ভিজ্যুয়াল ডিজাইনার। শেখার সঙ্গে সঙ্গে বাস্তব ও সুন্দর ডিজিটাল প্রোডাক্ট তৈরি করি।</p><div class="hero-actions"><a class="button" href="#skills">আমার দক্ষতা দেখুন ↓</a><a class="text-link" href="#contact">কথা বলা যাক ↗</a></div></div>
+      <div class="hero-index" aria-hidden="true"><span>PORTFOLIO</span><strong>’26</strong></div><a class="scroll-cue" href="#about"><span></span> SCROLL</a>
     </section>
-
-    <section id="about" class="section">
-      <div class="container">
-        <h2>আমার সম্পর্কে (একনজরে)</h2>
-        <table class="about-table">
-          <tr>
-            <th>বিষয়</th>
-            <th>বিস্তারিত তথ্য</th>
-          </tr>
-          <tr>
-            <td><strong>পুরো নাম</strong></td>
-            <td>ওমর ফারুক</td>
-          </tr>
-          <tr>
-            <td><strong>শিক্ষা</strong></td>
-            <td>ডিপ্লোমা ইন কম্পিউটার সায়েন্স অ্যান্ড টেকনোলজি (CST)</td>
-          </tr>
-          <tr>
-            <td><strong>প্রতিষ্ঠান</strong></td>
-            <td>কক্সবাজার পলিটেকনিক ইনস্টিটিউট (৫ম সেমিস্টার)</td>
-          </tr>
-          <tr>
-            <td><strong>প্যাশন</strong></td>
-            <td>ওয়েব ডেভেলপমেন্ট, পাইথন এবং প্রবলেম সলভিং</td>
-          </tr>
-          <tr>
-            <td><strong>অনলাইন প্ল্যাটফর্ম</strong></td>
-            <td>এডমিন, "Daily Tech" (ফেসবুক পেজ)</td>
-          </tr>
-          <tr>
-            <td><strong>কাজের ধরণ</strong></td>
-            <td>ক্লিন কোডিং, টিমওয়ার্ক এবং দ্রুত নতুন প্রযুক্তি শেখা</td>
-          </tr>
-          <tr>
-            <td><strong>ভবিষ্যৎ লক্ষ্য</strong></td>
-            <td>একজন দক্ষ ফুল-স্ট্যাক ওয়েব ডেভেলপার হওয়া</td>
-          </tr>
-        </table>
-      </div>
+    <section id="about" class="about wrap"><div class="section-number">01</div><div class="section-heading"><p class="kicker">পরিচিতি</p><h2>কৌতূহলই আমার<br><em>সবচেয়ে বড় শক্তি।</em></h2></div>
+      <div class="about-layout"><figure class="portrait"><img src="photo/faruk.jpg" alt="ওমর ফারুকের প্রতিকৃতি"><figcaption>Student / Designer / Developer</figcaption></figure><div class="about-copy"><p class="lead">কক্সবাজার পলিটেকনিক ইনস্টিটিউটে কম্পিউটার সায়েন্স অ্যান্ড টেকনোলজি নিয়ে পড়ছি। ক্লিন কোড, thoughtful design এবং নতুন প্রযুক্তি শেখার প্রতি আমার বিশেষ আগ্রহ।</p><p>ওয়েব ডেভেলপমেন্টের পাশাপাশি Python, Java, Data Structure এবং Graphics Design নিয়ে কাজ করি। লক্ষ্য—প্রযুক্তি ও নান্দনিকতার সমন্বয়ে একজন দক্ষ full-stack developer হওয়া।</p><dl class="facts"><div><dt>বর্তমান</dt><dd>৫ম সেমিস্টার, CST</dd></div><div><dt>প্রতিষ্ঠান</dt><dd>কক্সবাজার পলিটেকনিক</dd></div><div><dt>কমিউনিটি</dt><dd>Daily Tech</dd></div><div><dt>ফোকাস</dt><dd>Full-stack Web</dd></div></dl></div></div>
     </section>
-
-    <section id="skills" class="section">
-      <h2>My Skills & Experience</h2>
-
-      <div class="skills-container">
-        <div class="skill-box">
-          <div class="skill-info">
-            <span>HTML5 & CSS3 (Advanced)</span>
-            <span style="color: blue;">80%</span>
-          </div>
-          <div class="progress-line"><span class="html-css"></span></div>
-        </div>
-
-        <div class="skill-box">
-          <div class="skill-info">
-            <span>Web Design (Professional)</span>
-            <span style="color: blue;">75%</span>
-          </div>
-          <div class="progress-line"><span class="web-design"></span></div>
-        </div>
-
-        <div class="skill-box">
-          <div class="skill-info">
-            <span>Python (Intermediate)</span>
-            <span style="color: blue;">80%</span>
-          </div>
-          <div class="progress-line"><span class="python"></span></div>
-        </div>
-
-        <div class="skill-box">
-          <div class="skill-info">
-            <span>Graphics Design (Intermediate)</span>
-            <span style="color: blue;">90%</span>
-          </div>
-          <div class="progress-line"><span class="graphics"></span></div>
-        </div>
-
-        <div class="skill-box">
-          <div class="skill-info">
-            <span>Java Programming (Intermediate)</span>
-            <span style="color: blue;">60%</span>
-          </div>
-          <div class="progress-line"><span class="java"></span></div>
-        </div>
-
-        <div class="skill-box">
-          <div class="skill-info">
-            <span>Data Structure (Intermediate)</span>
-            <span style="color: blue;">Current Semester</span>
-          </div>
-          <div class="progress-line"><span class="ds"></span></div>
-        </div>
-      </div>
-    </section>
-    </section>
-  </div>
-
-
-  <section id="contact" class="section">
-    <h2>Contact Information</h2>
-    <p>📧 Email: omorfaruk22571@gmail.com</p>
-    <p> 📞Phone: 01776664368</p>
-    <p>📱 Facebook Page: <strong>Daily Tech</strong></p>
-    <p>📍 Location: Cox's Bazar, Bangladesh</p>
-  </section>
-
-  <div class="footer">
-    <p>&copy; 2026 Omor Faruk | 5th Sem CST | Web Practical Project</p>
-  </div>
-
-</body>
-
-</html>
+    <section id="skills" class="skills"><div class="wrap"><div class="skills-top"><div><p class="kicker light">দক্ষতা ও অভিজ্ঞতা</p><h2>Tools I use to<br><em>bring ideas alive.</em></h2></div><p class="skills-note">নিয়মিত শেখা ও হাতে-কলমে কাজের মাধ্যমে প্রতিটি skill আরও শক্তিশালী করছি।</p></div><div class="skill-list">
+      <article><span>01</span><h3>HTML & CSS</h3><p>Responsive layout, semantic markup, animation</p><strong>80%</strong></article><article><span>02</span><h3>Web Design</h3><p>Interface design, visual hierarchy, prototyping</p><strong>75%</strong></article><article><span>03</span><h3>Graphics Design</h3><p>Composition, typography, brand visuals</p><strong>90%</strong></article><article><span>04</span><h3>Python</h3><p>Problem solving, programming fundamentals</p><strong>80%</strong></article><article><span>05</span><h3>Java & DSA</h3><p>OOP, algorithms, structured thinking</p><strong>60%</strong></article>
+    </div></div></section>
+    <section id="contact" class="contact wrap"><p class="kicker">যোগাযোগ</p><div class="contact-grid"><h2>একসাথে দারুণ কিছু<br><em>তৈরি করা যাক।</em></h2><div class="contact-links"><a href="mailto:omorfaruk22571@gmail.com"><span>Email</span>omorfaruk22571@gmail.com <b>↗</b></a><a href="tel:+8801776664368"><span>Phone</span>+880 1776-664368 <b>↗</b></a><div><span>Location</span>Cox's Bazar, Bangladesh</div></div></div></section>
+  </main>
+  <footer><a class="brand" href="#home">OF<span>.</span></a><p>© 2026 Omor Faruk. Built with curiosity.</p><a href="#home">উপরে যান ↑</a></footer>
+</body></html>
